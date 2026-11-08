@@ -1,11 +1,11 @@
-﻿# Sistema de Expansion Retail
+﻿# Analisis de Expansion Comercial
 
-Herramientas desarrolladas para el analisis de ubicaciones y evaluacion financiera de locales comerciales.
+Herramientas para la evaluacion de ubicaciones y rentabilidad de locales comerciales.
 
-## Modulos
-- `src/geomarketing.py`: Agrupa barrios con KMeans y genera un mapa HTML con Folium.
-- `src/financiero.py`: Calcula CAPEX, Payback y ROI de un local basado en su flujo peatonal.
-- `src/negociador.py`: Genera borradores de correos de contraoferta usando la API de Groq.
+## Componentes
+- `src/geomarketing.py`: Agrupa barrios usando KMeans y genera un mapa interactivo en HTML.
+- `src/financiero.py`: Calcula el CAPEX, el retorno de inversion (Payback) y el ROI proyectado.
+- `src/negociador.py`: Asistente para redactar correos de contraoferta a propietarios.
 
-## Uso
-Requiere Python 3 y las librerias listadas en `requirements.txt`. Ejecutar cada script directamente.
+## Requisitos
+Requiere las librerias en `requirements.txt`. Ejecutar los scripts de forma individual.

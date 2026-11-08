@@ -4,11 +4,10 @@ from sklearn.cluster import KMeans
 import folium
 import os
 
-def analizar():
+def analizar_ubicaciones():
     np.random.seed(42)
     n = 50
     
-    # Datos simulados
     flujo = np.random.randint(1000, 15000, n)
     estrato = np.random.choice([1, 2, 3, 4], n)
     arriendo = (flujo * 0.05) + (estrato * 2) + np.random.normal(0, 5, n)
@@ -27,9 +26,9 @@ def analizar():
     df['cluster'] = kmeans.fit_predict(X)
 
     resumen = df.groupby('cluster').mean()
-    mejor = resumen['flujo'].idxmax()
+    mejor_cluster = resumen['flujo'].idxmax()
     
-    df['potencial'] = df['cluster'].apply(lambda x: 'ALTO' if x == mejor else 'BAJO')
+    df['potencial'] = df['cluster'].apply(lambda x: 'ALTO' if x == mejor_cluster else 'BAJO')
 
     print(df['potencial'].value_counts())
     os.makedirs('data', exist_ok=True)
@@ -44,8 +43,7 @@ def analizar():
             icon=folium.Icon(color=color, icon='store', prefix='fa')
         ).add_to(mapa)
         
-    mapa.save('mapa.html')
-    print("Mapa guardado.")
+    mapa.save('mapa_ubicaciones.html')
 
 if __name__ == "__main__":
-    analizar()
+    analizar_ubicaciones()
