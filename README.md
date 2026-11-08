@@ -1,7 +1,6 @@
 ﻿# Sistema Integral de Expansion Retail (SIER)
 
-**Autor:** jusegora  
-*Data Analyst & Retail Expansion Manager*
+**Autor:** | Abogado & AI Solutions Architect | LegalTech & Análisis Forense de Datos
 
 Este repositorio contiene herramientas avanzadas de analitica, Machine Learning y modelado financiero aplicadas a la estrategia de expansion fisica para el sector retail.
 
