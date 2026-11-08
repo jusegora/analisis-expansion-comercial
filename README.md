@@ -1,6 +1,6 @@
 ﻿# Analisis de Expansion Retail
 
-**Por:** jusegora | Abogado & AI Solutions Architect
+**Por:** jusegora | Abogado & AI Solutions Architect | LegalTech & Análisis Forense de Datos
 
 Herramientas que desarrollé para automatizar la toma de decisiones en la expansión de tiendas. En lugar de elegir locales "a ojo", el sistema usa datos para determinar si una ubicación es rentable.
 
